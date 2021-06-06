@@ -7,4 +7,4 @@
 3. Add the `data.json` file to the directory you're working in
 4. Run `jupyter lab` which will open up the Jupyter Lab on localhost
 5. Run the code blocks in order from top to bottom
-6. Adjust the date and graph style in the makeGraph function call to create a graph at that specified date and whether you want the day's BPM to be shown or the week corresponding to it. Setting `is_day=True` will show the graph for that day, and `is_day=True` for the week.
+6. Adjust the date and graph style in the makeGraph function call to create a graph at that specified date and whether you want the day's BPM to be shown or the week corresponding to it. Setting `is_day=True` will show the graph for that day, and `is_day=False` for the week.
