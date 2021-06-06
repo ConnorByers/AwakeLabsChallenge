@@ -13,13 +13,13 @@
 
 #### How I dealt with the json:
 
-I loaded the json file normally into python and made an array of all the rows of data
+I loaded the json file normally into python and made an array of all the rows of data and then created a Pandas DataFrame from that
 
 I decided to use pandas in order to store and manipulate the data. I used pandas because:
 - Better performance over numpy on larger datasets which our provided dataset is and what AwakeLabs will deal with
-- Uses DataFrame and Series data structures which have lots of features and integrations. DataFrame allows multiple columns and has json support to allow us to easily deal with nested JSON like being able to create a DataFrame table from different layers in a nested JSON. Series and DataFrame has easy integration with Bokeh which is the graphing tool I chose to use, so I don't need to export data myself from these sources and manipulate it to create a graph from it, it does it behind the scenes in an efficient way.
-- Pandas is widely used so if AwakeLabs wanted to do something else with this data, there certainly exists a library/package/tool that has Pandas integration included so using this is very future proof
-- As DataFrame is a table, we can easily access data in other columns and make more graphs
+- Uses DataFrame and Series data structures which have lots of useful methods/features and external integrations. DataFrame allows multiple columns and has json support to allow us to easily deal with any nested JSON (ex. being able to create a DataFrame table from different layers in a nested JSON). Series and DataFrame has easy integration with Bokeh which is the graphing tool I chose to use, so I don't need to export data myself from these sources and manipulate it to create a graph from it, it does it behind the scenes in an efficient way.
+- Pandas is widely used so if AwakeLabs wanted to do something else with this data, there certainly exists a library/package/tool for it that has Pandas integration included so using its very future proof and maintainable.
+- As our main DataFrame stores all relevant values, we can easily access/manipulate data in other columns and make any graph that we want from this data
 - Built in filtering which allows me to select only data rows within a certain date range and its abstracted so we don't have to worry about what's the best way to do that
 
 
